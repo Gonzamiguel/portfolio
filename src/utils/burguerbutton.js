@@ -97,9 +97,16 @@ const tarjetas = document.querySelectorAll('.tarjeta');
 
 // Agregar controladores de eventos a los botones
 btnTodos.addEventListener('click', filtrarPorTodos);
+btnTodos.addEventListener('touchstart', filtrarPorTodos); // Evento táctil
+
 btnHtml.addEventListener('click', filtrarPorHtml);
+btnHtml.addEventListener('touchstart', filtrarPorHtml); // Evento táctil
+
 btnReact.addEventListener('click', filtrarPorReact);
+btnReact.addEventListener('touchstart', filtrarPorReact); // Evento táctil
+
 btnTailwind.addEventListener('click', filtrarPorTailwind);
+btnTailwind.addEventListener('touchstart', filtrarPorTailwind); // Evento táctil
 
 // Funciones para filtrar las tarjetas de proyectos
 function filtrarPorTodos() {
