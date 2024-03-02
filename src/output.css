@@ -622,10 +622,6 @@ video {
   margin: -0.5rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -674,6 +670,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -702,14 +702,6 @@ video {
   height: 100%;
 }
 
-.h-\[14px\] {
-  height: 14px;
-}
-
-.h-\[32px\] {
-  height: 32px;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -722,40 +714,16 @@ video {
   width: 20rem;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-\[\|4px\] {
-  width: |4px;
-}
-
-.w-\[14px\] {
-  width: 14px;
-}
-
-.w-\[32px\] {
-  width: 32px;
-}
-
-.w-\[52px\] {
-  width: 52px;
-}
-
-.w-\[72px\] {
-  width: 72px;
-}
-
-.w-\[12px\] {
-  width: 12px;
-}
-
-.w-\[120px\] {
-  width: 120px;
+.w-52 {
+  width: 13rem;
 }
 
 .cursor-pointer {
@@ -764,6 +732,10 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -798,8 +770,18 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -816,6 +798,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
@@ -863,11 +849,6 @@ video {
   padding: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -906,6 +887,11 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .py-4 {
@@ -1091,6 +1077,24 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin:20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .tarjeta .relative {
+    position: static;
+  }
+
+  .tarjeta .absolute {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    opacity: 1;
+    transition: none;
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 .marker\:w-full *::marker {
@@ -1127,6 +1131,12 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1175,10 +1185,6 @@ video {
     width: auto;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1197,6 +1203,16 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:py-0 {
@@ -1236,6 +1252,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-52 {
+    margin-left: 13rem;
+  }
+
   .lg\:h-screen {
     height: 100vh;
   }
@@ -1243,8 +1263,15 @@ video {
   .lg\:w-1\/2 {
     width: 50%;
   }
-}
 
+  .lg\:w-\[900px\] {
+    width: 900px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 
 

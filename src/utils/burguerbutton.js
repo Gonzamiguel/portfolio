@@ -40,24 +40,20 @@ document.querySelectorAll('.w-80').forEach(item => {
     });
 });
 
-    // Función para desplazamiento suave
-    function scrollToElement(targetElement) {
-        // Obtener la posición del elemento objetivo
-        const targetPosition = targetElement.offsetTop - 80;
 
-        // Duración del desplazamiento suave en milisegundos
+    // Funcion scroll
+    
+    function scrollToElement(targetElement) {
+        const targetPosition = targetElement.offsetTop - 110;
+
         const duration = 800; 
 
-        // Posición actual del documento
         const startPosition = window.pageYOffset;
 
-        // Diferencia entre la posición actual y la posición del elemento objetivo
         const distance = targetPosition - startPosition;
 
-        // Hora de inicio del desplazamiento
         let startTime = null;
 
-        // Función de animación para desplazamiento suave
         function animation(currentTime) {
             if (startTime === null) startTime = currentTime;
             const timeElapsed = currentTime - startTime;
@@ -66,7 +62,6 @@ document.querySelectorAll('.w-80').forEach(item => {
             if (timeElapsed < duration) requestAnimationFrame(animation);
         }
 
-        // Función de suavizado de movimiento (ease)
         function ease(t, b, c, d) {
             t /= d / 2;
             if (t < 1) return c / 2 * t * t + b;
@@ -74,11 +69,9 @@ document.querySelectorAll('.w-80').forEach(item => {
             return -c / 2 * (t * (t - 2) - 1) + b;
         }
 
-        // Iniciar el desplazamiento suave
         requestAnimationFrame(animation);
     }
 
-    // Asignar el desplazamiento suave a los enlaces del menú de navegación
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -93,3 +86,54 @@ document.querySelectorAll('.w-80').forEach(item => {
 
 
 
+// Obtener referencias a los botones
+const btnTodos = document.getElementById('btnTodos');
+const btnHtml = document.getElementById('btnHtml');
+const btnReact = document.getElementById('btnReact');
+const btnTailwind = document.getElementById('btnTailwind');
+
+// Obtener todas las tarjetas
+const tarjetas = document.querySelectorAll('.tarjeta');
+
+// Agregar controladores de eventos a los botones
+btnTodos.addEventListener('click', filtrarPorTodos);
+btnHtml.addEventListener('click', filtrarPorHtml);
+btnReact.addEventListener('click', filtrarPorReact);
+btnTailwind.addEventListener('click', filtrarPorTailwind);
+
+// Funciones para filtrar las tarjetas de proyectos
+function filtrarPorTodos() {
+    tarjetas.forEach(tarjeta => {
+        tarjeta.style.display = 'block';
+    });
+}
+
+function filtrarPorHtml() {
+    tarjetas.forEach(tarjeta => {
+        if (tarjeta.classList.contains('proyecto-html')) {
+            tarjeta.style.display = 'block';
+        } else {
+            tarjeta.style.display = 'none';
+        }
+    });
+}
+
+function filtrarPorReact() {
+    tarjetas.forEach(tarjeta => {
+        if (tarjeta.classList.contains('proyecto-react')) {
+            tarjeta.style.display = 'block';
+        } else {
+            tarjeta.style.display = 'none';
+        }
+    });
+}
+
+function filtrarPorTailwind() {
+    tarjetas.forEach(tarjeta => {
+        if (tarjeta.classList.contains('proyecto-tailwind')) {
+            tarjeta.style.display = 'block';
+        } else {
+            tarjeta.style.display = 'none';
+        }
+    });
+}
