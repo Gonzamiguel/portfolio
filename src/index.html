@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="bg-[#0B0A1F]">
+    <div id="linterna"></div>
+    <header>
+        <nav class="p-5 md:flex md:items-center md:justify-between bg-[#0B0A1F] text-white fixed top-0 w-full z-10">
+            <div class="flex justify-around items-center mt-3">
+                <span class=""><img class="w-[120px] " src="./public/Proyecto_nuevo-removebg-preview (1).png" alt=""></span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block " onclick="toggleMenu()">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </span>
+            </div>
+            <ul class="md:flex md:items-center z-[1000] md:static absolute bg-[#0B0A1F] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:top-auto md:justify-end">
+                <!-- Ajustamos la alineación a la derecha en dispositivos móviles -->
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#header"
+                        class="text-[#f5f5f5] text-[18px] hover:text-[#31D5DE] py-1 px-3 font-outfit font-normal"
+                        onclick="closeMenu()">Inicio</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#proyectos" class="text-[#f5f5f5] text-[18px] hover:text-[#31D5DE] py-1 px-3 font-outfit font-normal"
+                        onclick="closeMenu()">Proyectos</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a class="text-[#f5f5f5] text-[18px] hover:text-[#31D5DE] py-1 px-3 font-outfit font-normal" href="#habilidades"
+                        onclick="closeMenu()">Habilidades</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a class="text-[#f5f5f5] text-[18px] hover:text-[#31D5DE] py-1 px-3 font-outfit font-normal" href="#sobreMi"
+                        onclick="closeMenu()">Sobre mi</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a class="text-[#f5f5f5] text-[18px] hover:text-[#31D5DE] py-1 px-3 font-outfit font-normal" href="#contacto"
+                        onclick="closeMenu()">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Seccion de presentacion -->
+        <section id="header" class="font-outfit flex justify-center items-center lg:h-screen">
+            <div class="container flex px-5 py-24 justify-center md:flex-row flex-col items-center">
+                <div class="">
+                    <img class="" alt="hero" src="./public/Gonzalo-removebg-preview.png">
+                </div>
+                <div class="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center text-[#f5f5f5]">
+                    <h2 class="text-[35px]  mb-6 text-white font-outfit font-bold leading-[50px]">Gonzalo
+                        Miguel
+                    </h2>
+                    <h1
+                        class="text-[#31D5DE] mb-2 md:mb-4 font-outfit font-extrabold text-[35px] md:md:text-[50px] leading-[50px]">
+                        Desarrollador
+                        Front End</h1>
+                    <p class="font-outfit text-[16px] mb-2 leading-[30px]">Estoy apasionado por cada desafío que
+                        enfrento y siempre estoy listo para adaptarme a nuevos entornos laborales. Me encanta explorar
+                        la <em class="font-outfit font-normal text-[#31D5DE] text-[17px]">transformación digital</em> y
+                        promover la <em class="font-outfit font-normal text-[#31D5DE] text-[17px]">accesibilidad</em>
+                        para lograr una inclusión auténtica.</p>
+                    <div class="flex justify-center items-center space-x-5 mt-5">
+                        <a id="downloadLink" href="./public/Cv-GonzaloMiguelDev.pdf" download target="_blank"
+                            style="display: none">Descargar CV</a>
+                        <button onclick="downloadCV()"
+                            class="inline-flex text-[#f5f5f5] bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] py-2 px-6 focus:outline-none  rounded text-lg">Descargar
+                            CV</button>
+                        <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank">
+                            <button>
+                                <img src="./public/linkedin_logo_icon_187146.png" alt="">
+                            </button>
+                        </a>
+                        <a href="https://github.com/Gonzamiguel" target="_blank">
+                            <button>
+                                <img src="./public/github_logo_icon_147285.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Proyectos -->
+
+        <section id="proyectos" class="flex flex-col justify-center items-center ">
+            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-[30px] md:text-[40px]">Proyectos</h3>
+            <p class="font-outfit font-normal leading-[36px] text-[#fff] text-[18px]">Todo lo que puedas <em
+                    class="font-bold text-[#31D5DE]">imaginar</em>, lo podras <em
+                    class="font-bold text-[#31D5DE]">programar</em></p>
+            <div class="flex mt-4 flex-col gap-10">
+                <ul class="flex justify-center items-center flex-col md:flex-row space-x-8">
+                    <li>
+                        <button id=""
+                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">Todos
+                            <button>
+                    </li>
+                    <li>
+                        <button id=""
+                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">Html /
+                            Css / Javascript
+                        </button>
+                    </li>
+                    <li>
+                        <button id=""
+                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">React Js
+                        </button>
+                    </li>
+                    <li>
+                        <button id=""
+                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">Tailwind
+                            Css
+                        </button>
+                    </li>
+                </ul>
+                <div class="flex w-full flex-wrap content-center justify-center ">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center">
+                        <div class="w-72 md:w-96 relative">
+                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
+                                src="https://i.imgur.com/5yeBVeM.jpeg" />
+                            <div
+                                class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
+                                <h3
+                                    class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
+                                    Departamentos en alquiler</h3>
+                                <p
+                                    class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
+                                    Diseñada
+                                    para proporcionar información clara y concisa tanto para dispositivos móviles como
+                                    de escritorio. Los visitantes pueden encontrar fácilmente información sobre los
+                                    departamentos disponibles y ponerse en contacto para obtener más detalles.</p>
+                                <div class="flex justify-center items-center mt-3">
+                                    <img src="./public/html.png" alt="">
+                                    <img src="./public/css.png" alt="">
+                                    <img src="./public/js.png" alt="">
+                                    <img src="./public/git.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-72 md:w-96 relative">
+                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
+                                src="https://i.imgur.com/5yeBVeM.jpeg" />
+                            <div
+                                class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
+                                <h3
+                                    class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
+                                    Departamentos en alquiler</h3>
+                                <p
+                                    class="px-3 font-outfit font-normal  text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
+                                    Diseñada
+                                    para proporcionar información clara y concisa tanto para dispositivos móviles como
+                                    de escritorio. Los visitantes pueden encontrar fácilmente información sobre los
+                                    departamentos disponibles y ponerse en contacto para obtener más detalles.</p>
+                                <div class="flex justify-center items-center mt-3">
+                                    <img src="./public/html.png" alt="">
+                                    <img src="./public/css.png" alt="">
+                                    <img src="./public/js.png" alt="">
+                                    <img src="./public/git.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-72 md:w-96 relative">
+                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
+                                src="https://i.imgur.com/5yeBVeM.jpeg" />
+                            <div
+                                class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
+                                <h3
+                                    class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
+                                    Departamentos en alquiler</h3>
+                                <p
+                                    class="px-3 font-outfit font-normal  text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
+                                    Diseñada
+                                    para proporcionar información clara y concisa tanto para dispositivos móviles como
+                                    de escritorio. Los visitantes pueden encontrar fácilmente información sobre los
+                                    departamentos disponibles y ponerse en contacto para obtener más detalles.</p>
+                                <div class="flex justify-center items-center mt-3">
+                                    <img src="./public/html.png" alt="">
+                                    <img src="./public/css.png" alt="">
+                                    <img src="./public/js.png" alt="">
+                                    <img src="./public/git.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-72 md:w-96 relative">
+                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
+                                src="https://i.imgur.com/5yeBVeM.jpeg" />
+                            <div
+                                class="absolute top-0 left-0 marker:w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
+                                <h3
+                                    class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
+                                    Departamentos en alquiler
+                                </h3>
+                                <p
+                                    class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
+                                    Diseñada para proporcionar información clara y concisa tanto para dispositivos
+                                    móviles como de escritorio. Los visitantes pueden encontrar fácilmente información
+                                    sobre los departamentos disponibles y ponerse en contacto para obtener más detalles.
+                                </p>
+                                <div class="flex justify-center items-center mt-3 ">
+                                    <img src="./public/html.png" alt="">
+                                    <img src="./public/css.png" alt="">
+                                    <img src="./public/js.png" alt="">
+                                    <img src="./public/git.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Habilidades -->
+
+        <section id="habilidades" class="flex flex-col justify-center items-center mt-10 ">
+            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Habilidades</h3>
+            <div class="flex p-5 borderkk">
+                <picture class="flex flex-col md:flex-row justify-center gap-5">
+                    <div class="md:w-1/2 flex justify-center gap-5">
+                        <img src="./public/gitgrande.png" alt="">
+                        <img src="./public/htmlgrande.png" alt="">
+                    </div>
+                    <div class="md:w-1/2 flex justify-center gap-5">
+                        <img src="./public/cssgrande.png" alt="">
+                        <img src="./public/jsgrande.png" alt="">
+                    </div>
+                    <div class="md:w-1/2 flex justify-center gap-5">
+                        <img src="./public/tailwindgrande.png" alt="">
+                        <img src="./public/reactgrande.png" alt="">
+                    </div>
+                </picture>
+
+            </div>
+        </section>
+
+        <!-- Seccion Sobre Mi -->
+
+        <section id="sobreMi" class="flex flex-col justify-center items-center mt-5 ">
+            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Sobre mi</h3>
+            <p class="px-10 m-5 font-outfit font-normal text-[16px] md:text-[18px] text-[#fff] leading-[36px]">Soy <em
+                    class="font-bold text-[#31D5DE]">Gonzalo Augustin Miguel</em> un apasionado de la tecnología que
+                decidió embarcarse en este emocionante viaje. Me encuentro inmerso en el fascinante mundo de la
+                tecnología, explorando sus infinitas posibilidades y desafiándome a mí mismo cada día. <br>
+                Desde que tomé la decisión de adentrarme en este campo, mi entusiasmo y sed de conocimiento no han
+                dejado de crecer. Cada nueva herramienta, lenguaje de programación o concepto me inspira a aprender más
+                y a profundizar en mi comprensión del mundo digital que nos rodea. <br>
+                Estoy emocionado por lo que el futuro me depara en este apasionante viaje tecnológico y ansioso por
+                seguir creciendo, aprendiendo y compartiendo mi pasión con el mundo.
+            </p>
+        </section>
+
+        <!-- Seccion contactos -->
+
+        <section id="contacto" class="relative ">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Trabajemos juntos</h3>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="font-outfit leading-7 text-sm text-[#fff]">Nombre</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-[#0B0A1F] rounded border border-[#31D5DE] focus:border-[#31D5DE] text-[#fff] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="font-outfit leading-7 text-sm text-[#fff]">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-[#0B0A1F] rounded border border-[#31D5DE] focus:border-[#31D5DE] text-[#fff] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="font-outfit leading-7 text-sm text-[#fff]">Mensaje</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-[#0B0A1F] rounded border border-[#31D5DE] focus:border-[#31D5DE] text-[#fff] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-[#fff] bg-[#31D5DE] bg-opacity-50 border-0 py-2 px-8 focus:outline-none hover:bg-[#31D5DE] rounded text-lg">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="./utils/burguerbutton.js"></script>
+</body>
+
+</html>
