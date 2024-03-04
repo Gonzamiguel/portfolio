@@ -88,40 +88,23 @@ document.querySelectorAll('.w-80').forEach(item => {
 
 // Obtener referencias a los botones
 const btnTodos = document.getElementById('btnTodos');
-const btnHtml = document.getElementById('btnHtml');
 const btnReact = document.getElementById('btnReact');
 const btnTailwind = document.getElementById('btnTailwind');
+const btnSass = document.getElementById('btnSass');
 
 // Obtener todas las tarjetas
 const tarjetas = document.querySelectorAll('.tarjeta');
 
 // Agregar controladores de eventos a los botones
 btnTodos.addEventListener('click', filtrarPorTodos);
-btnTodos.addEventListener('touchstart', filtrarPorTodos); // Evento táctil
-
-btnHtml.addEventListener('click', filtrarPorHtml);
-btnHtml.addEventListener('touchstart', filtrarPorHtml); // Evento táctil
-
 btnReact.addEventListener('click', filtrarPorReact);
-btnReact.addEventListener('touchstart', filtrarPorReact); // Evento táctil
-
 btnTailwind.addEventListener('click', filtrarPorTailwind);
-btnTailwind.addEventListener('touchstart', filtrarPorTailwind); // Evento táctil
+btnSass.addEventListener('click', filtrarPorSass);
 
 // Funciones para filtrar las tarjetas de proyectos
 function filtrarPorTodos() {
     tarjetas.forEach(tarjeta => {
         tarjeta.style.display = 'block';
-    });
-}
-
-function filtrarPorHtml() {
-    tarjetas.forEach(tarjeta => {
-        if (tarjeta.classList.contains('proyecto-html')) {
-            tarjeta.style.display = 'block';
-        } else {
-            tarjeta.style.display = 'none';
-        }
     });
 }
 
@@ -138,6 +121,16 @@ function filtrarPorReact() {
 function filtrarPorTailwind() {
     tarjetas.forEach(tarjeta => {
         if (tarjeta.classList.contains('proyecto-tailwind')) {
+            tarjeta.style.display = 'block';
+        } else {
+            tarjeta.style.display = 'none';
+        }
+    });
+}
+
+function filtrarPorSass() {
+    tarjetas.forEach(tarjeta => {
+        if (tarjeta.classList.contains('proyecto-sass')) {
             tarjeta.style.display = 'block';
         } else {
             tarjeta.style.display = 'none';
