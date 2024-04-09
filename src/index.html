@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -15,12 +15,12 @@
 </head>
 
 <body class="bg-[#0B0A1F]">
-    <div id="linterna"></div>
+    
     <header>
         <nav class="p-5 md:flex md:items-center md:justify-between bg-[#0B0A1F] text-white fixed top-0 w-full z-10">
             <div class="flex justify-around items-center mt-3">
                 <a href="#header">
-                    <span><img class="w-[80px] md:w-[120px]" src="./src/public/Proyecto_nuevo-removebg-preview (1).png" alt=""></span>
+                    <span><img class="w-[80px] md:w-[120px]" src="./public/Proyecto_nuevo-removebg-preview (1).png" alt=""></span>
                 </a>
                 <span class="text-3xl cursor-pointer mx-2 md:hidden block " onclick="toggleMenu()">
                     <span class="material-symbols-outlined">
@@ -63,13 +63,13 @@
         <section id="header" class="font-outfit flex justify-center items-center ">
             <div class="container flex px-5 py-32 justify-center md:flex-row flex-col items-center">
                 <div>
-                    <img class="rounded-md w-60 md:w-72 mr-5" alt="hero" src="./src/public/yo.png">
+                    <img class="rounded-md w-60 md:w-72 mr-5" alt="hero" src="./public/yo.png">
                 </div>
                 <div class="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center text-[#f5f5f5]">
-                    <h2 class="text-[35px] mb-6 text-white font-outfit font-bold leading-[50px]">Gonzalo
+                    <h2 id="nombre" class="text-[35px] mb-6 text-white font-outfit font-bold leading-[50px]">Gonzalo
                         Miguel
                     </h2>
-                    <h1
+                    <h1 id="titulo"
                         class="text-[#31D5DE] mb-2 md:mb-4 font-outfit font-extrabold text-[35px] md:md:text-[50px] leading-[50px]">
                         Desarrollador
                         Front End</h1>
@@ -79,19 +79,19 @@
                         promover la <em class="font-outfit font-normal text-[#31D5DE] text-[17px]">accesibilidad</em>
                         para lograr una inclusión auténtica.</p>
                     <div class="flex justify-center items-center space-x-5 mt-5">
-                        <a id="downloadLink" href="./src/public/Cv-GonzaloMiguelDev.pdf" download target="_blank"
+                        <a id="downloadLink" href="./public/Cv-GonzaloMiguelDev.pdf" download target="_blank"
                             style="display: none">Descargar CV</a>
                         <button onclick="downloadCV()"
                             class="inline-flex text-[#f5f5f5] bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] py-2 px-6 focus:outline-none  rounded text-lg">Descargar
                             CV</button>
                         <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank">
                             <button>
-                                <img src="./src/public/iconos/linkedin_logo_icon_187146.png" alt="">
+                                <img src="./public/iconos/linkedin_logo_icon_187146.png" alt="">
                             </button>
                         </a>
                         <a href="https://github.com/Gonzamiguel" target="_blank">
                             <button>
-                                <img src="./src/public/iconos/github_logo_icon_147285.png" alt="">
+                                <img src="./public/iconos/github_logo_icon_147285.png" alt="">
                             </button>
                         </a>
                     </div>
@@ -135,7 +135,7 @@
                         <div class="w-72 md:w-96 relative tarjeta proyecto-tailwind">
 
                             <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/centralAv.webp" />
+                                src="./public/proyectos/centralAv.webp" />
                             <a href="https://tomaszalazar.github.io/Central-Av/" target="_blank">
                                 <div
                                     class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
@@ -150,17 +150,17 @@
                                         de escritorio. Los visitantes pueden encontrar fácilmente información sobre los
                                         departamentos disponibles y ponerse en contacto para obtener más detalles.</p>
                                     <div class="flex justify-center items-center mt-3 md:space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
+                                        <img src="./public/iconos/html.png" alt="">
+                                        <img src="./public/iconos/css.png" alt="">
+                                        <img src="./public/iconos/js.png" alt="">
+                                        <img src="./public/iconos/git.png" alt="">
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="w-72 md:w-96 relative tarjeta proyecto-react">
                             <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/burguer.webp" />
+                                src="./public/proyectos/burguer.webp" />
                             <a href="https://gonzamiguel.github.io/Burguers/" target="_blank">
                                 <div
                                     class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
@@ -177,11 +177,11 @@
                                     </p>
                                     <div class="flex justify-center items-center mt-3 md
                                 space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
-                                        <img src="./src/public/iconos/react.png" alt="">
+                                        <img src="./public/iconos/html.png" alt="">
+                                        <img src="./public/iconos/css.png" alt="">
+                                        <img src="./public/iconos/js.png" alt="">
+                                        <img src="./public/iconos/git.png" alt="">
+                                        <img src="./public/iconos/react.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -190,7 +190,7 @@
                         <div class="w-72 md:w-96 relative tarjeta proyecto-sass">
 
                             <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/analisisPro.webp"/>
+                                src="./public/proyectos/analisisPro.webp"/>
 
                             <a href="https://analyticspro.netlify.app" target="_blank">
                                 <div
@@ -207,18 +207,18 @@
                                         decisiones informadas y alcanzar objetivos utilizando herramientas y técnicas de
                                         análisis avanzadas.</p>
                                     <div class="flex justify-center items-center mt-3 md:space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/file_type_sass_icon_130182.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
+                                        <img src="./public/iconos/html.png" alt="">
+                                        <img src="./public/iconos/css.png" alt="">
+                                        <img src="./public/iconos/js.png" alt="">
+                                        <img src="./public/iconos/file_type_sass_icon_130182.png" alt="">
+                                        <img src="./public/iconos/git.png" alt="">
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="w-72 md:w-96 relative tarjeta proyecto-react">
                             <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/adidas.webp" />
+                                src="./public/proyectos/adidas.webp" />
 
                             <a href="https://pruebas-react-1.netlify.app" target="_blank">
                                 <div
@@ -237,11 +237,11 @@
                                         materiales y tecnologías utilizadas en la fabricación.
                                     </p>
                                     <div class="flex justify-center items-center mt-3 md:space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
-                                        <img src="./src/public/iconos/react.png" alt="">
+                                        <img src="./public/iconos/html.png" alt="">
+                                        <img src="./public/iconos/css.png" alt="">
+                                        <img src="./public/iconos/js.png" alt="">
+                                        <img src="./public/iconos/git.png" alt="">
+                                        <img src="./public/iconos/react.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -254,18 +254,57 @@
         <!-- Seccion Habilidades -->
 
         <section id="habilidades" class="flex flex-col justify-center items-center mt-10">
-            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Habilidades</h3>
-            <div class="flex p-5 borderkk">
-                <picture class="flex flex-row flex-wrap justify-center gap-2 md:gap-5">
-                    <img src="./src/public/iconos/gitgrande.png" alt="">
-                    <img src="./src/public/iconos/htmlgrande.png" alt="">
-                    <img src="./src/public/iconos/cssgrande.png" alt="">
-                    <img src="./src/public/iconos/jsgrande.png" alt="">
-                    <img src="./src/public/iconos/tailwindgrande.png" alt="">
-                    <img src="./src/public/iconos/reactgrande.png" alt="">
-                    <img src="./src/public/iconos/sassgrande.png" alt="">
+            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Habilidades tecnicas</h3>
+            <div id="carousel" class="flex p-5 borderkk">
+                <picture id="carousel-inner" class="flex flex-row flex-wrap justify-center gap-2 md:gap-5">
+                    <img src="./public/iconos/gitgrande.png" alt="">
+                    <img src="./public/iconos/htmlgrande.png" alt="">
+                    <img src="./public/iconos/cssgrande.png" alt="">
+                    <img src="./public/iconos/jsgrande.png" alt="">
+                    <img src="./public/iconos/tailwindgrande.png" alt="">
+                    <img src="./public/iconos/reactgrande.png" alt="">
+                    <img src="./public/iconos/sassgrande.png" alt="">
                 </picture>
             </div>
+        </section>
+        
+
+        <section id="habilidades" class="flex flex-col justify-center items-center mt-10">
+            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Habilidades blandas</h3>
+            <div class="flex flex-wrap justify-center p-5 borderkk">
+                <div class="grid grid-cols-1 gap-2 md:gap-5 text-[#fff]">
+                    <div>
+                        <div class="flex flex-row">
+                            <img class="w-5 h-5" src="./public/iconos/aprobado.png" alt="tilde">
+                            <h3>Creatividad</h3>
+                        </div>
+                        <p class="text-sm">Soluciones originales</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-row">
+                            <img class="w-5 h-5" src="./public/iconos/aprobado.png" alt="tilde">
+                            <h3>Responsabilidad</h3>
+                        </div>
+                        <p class="text-sm">Cumplimiento y confiabilidad</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-row">
+                            <img class="w-5 h-5" src="./public/iconos/aprobado.png" alt="tilde">
+                            <h3>Aprendizaje continuo</h3>
+                        </div>
+                        <p class="text-sm">Compromiso con el aprendizaje y mejora continua</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-row">
+                            <img class="w-5 h-5" src="./public/iconos/aprobado.png" alt="tilde">
+                            <h3>Flexibilidad</h3>
+                        </div>
+                        <p class="text-sm">Adaptable y flexible a cualquier situación</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         </section>
 
         <!-- Seccion Sobre Mi -->
@@ -283,49 +322,44 @@
                 seguir creciendo, aprendiendo y compartiendo mi pasión con el mundo.
             </p>
         </section>
+        
+        <!-- SECCION CONTACTOS -->
 
-        <!-- Seccion contactos -->
-
-        <section id="contacto" class="relative">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-col text-center w-full mb-12">
-                    <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Trabajemos juntos</h3>
+        <section id="contacto" class="flex flex-col items-center mt-14">
+            <div>
+                <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Contáctame</h3>
+            </div>
+            <div class="flex flex-col md:flex-row  justify-center gap-4 text-[#fff]">
+                <div class="borderkk flex flex-col items-center p-5 gap-2 md:w-[300px] w-[250px]">
+                    <img src="../src/public/iconos/mail.png" alt="email">
+                    <h4>Email</h4>
+                    <p class="text-sm">gonzalomiguel.dev@gmail.com</p>
+                    <a href="mailto:gonzalomiguel.dev@gmail.com" target="_blank"><em class="font-bold text-[#31D5DE]">Contáctame</em></a>
                 </div>
-                <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                    <div class="flex flex-wrap -m-2">
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="name" class="font-outfit leading-7 text-sm text-[#fff]">Nombre</label>
-                                <input type="text" id="name" name="name"
-                                    class="w-full bg-[#0B0A1F] rounded border border-[#31D5DE] focus:border-[#31D5DE] text-[#fff] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                        </div>
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="email" class="font-outfit leading-7 text-sm text-[#fff]">Email</label>
-                                <input type="email" id="email" name="email"
-                                    class="w-full bg-[#0B0A1F] rounded border border-[#31D5DE] focus:border-[#31D5DE] text-[#fff] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                        </div>
-                        <div class="p-2 w-full">
-                            <div class="relative">
-                                <label for="message" class="font-outfit leading-7 text-sm text-[#fff]">Mensaje</label>
-                                <textarea id="message" name="message"
-                                    class="w-full bg-[#0B0A1F] rounded border border-[#31D5DE] focus:border-[#31D5DE] text-[#fff] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
-                            </div>
-                        </div>
-                        <div class="p-2 w-full">
-                            <button
-                                class="flex mx-auto text-[#fff] bg-[#31D5DE] bg-opacity-50 border-0 py-2 px-8 focus:outline-none hover:bg-[#31D5DE] rounded text-lg">Enviar</button>
-                        </div>
-                    </div>
+                <div class="borderkk flex flex-col items-center p-5 gap-2 md:w-[300px] w-[250px]">
+                    <img src="../src/public/iconos/linkedin.png" alt="linkedin">
+                    <h4>Linkedin</h4>
+                    <p class="text-sm">Gonzalo Miguel</p>
+                    <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank"><em class="font-bold text-[#31D5DE]">Contáctame</em></a>
                 </div>
             </div>
         </section>
+
+
+        <hr class="mx-20 my-16">
+
+
+        <footer class="flex justify-center items-center flex-col">
+            <h4 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Gonzalo Miguel</h4>
+            <div class="flex flex-row gap-x-6 mt-4 mb-4">
+                <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank"><img src="./public/iconos/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/Gonzamiguel" target="_blank"><img src="./public/iconos/github_logo_icon_147285.png" alt="git"></a>
+                <a href="mailto:gonzalomiguel.dev@gmail.com" target="_blank"><img src="./public/iconos/mail.png" alt="email"></a>
+            </div>
+            <p class="text-sm text-[#fff]">© Miguel Gonzalo. Todos los derechos reservados
+        </footer>
     </main>
-    <footer>
-    </footer>
-    <script src="./src/utils/burguerbutton.js"></script>
+    <script src="./utils/burguerbutton.js"></script>
 </body>
 /
 </html>
