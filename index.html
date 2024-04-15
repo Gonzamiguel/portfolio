@@ -12,15 +12,16 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-[#0B0A1F]">
-    
     <header>
         <nav class="p-5 md:flex md:items-center md:justify-between bg-[#0B0A1F] text-white fixed top-0 w-full z-10">
             <div class="flex justify-around items-center mt-3">
                 <a href="#header">
-                    <span><img class="w-[80px] md:w-[120px]" src="./src/public/Proyecto_nuevo-removebg-preview (1).png" alt=""></span>
+                    <span><img class="w-[80px] md:w-[120px]" src="./src/public/Proyecto_nuevo-removebg-preview (1).png"
+                            alt=""></span>
                 </a>
                 <span class="text-3xl cursor-pointer mx-2 md:hidden block " onclick="toggleMenu()">
                     <span class="material-symbols-outlined">
@@ -30,7 +31,6 @@
             </div>
             <ul
                 class="md:flex md:items-center z-[1000] md:static absolute bg-[#0B0A1F] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:top-auto md:justify-end">
-                <!-- Ajustamos la alineación a la derecha en dispositivos móviles -->
                 <li class="mx-4 my-6 md:my-0">
                     <a href="#header"
                         class="text-[#f5f5f5] text-[18px] hover:text-[#31D5DE] py-1 px-3 font-outfit font-normal"
@@ -66,10 +66,11 @@
                     <img class="rounded-md w-60 md:w-72 mr-5" alt="hero" src="./src/public/yo.png">
                 </div>
                 <div class="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center text-[#f5f5f5]">
-                    <h2 id="nombre" class="text-[35px] mb-6 text-white font-outfit font-bold leading-[50px]">Gonzalo
+                    <h2 id="nombre" data-aos="zoom-out" data-aos-duration="3000"
+                    class="text-[35px] mb-6 text-white font-outfit font-bold leading-[50px]">Gonzalo
                         Miguel
                     </h2>
-                    <h1 id="titulo"
+                    <h1 id="titulo" data-aos="zoom-out" data-aos-duration="3000"
                         class="text-[#31D5DE] mb-2 md:mb-4 font-outfit font-extrabold text-[35px] md:md:text-[50px] leading-[50px]">
                         Desarrollador
                         Front End</h1>
@@ -79,7 +80,7 @@
                         promover la <em class="font-outfit font-normal text-[#31D5DE] text-[17px]">accesibilidad</em>
                         para lograr una inclusión auténtica.</p>
                     <div class="flex justify-center items-center space-x-5 mt-5">
-                        <a id="downloadLink" href="./src/public/Cv-GonzaloMiguelDev.pdf" download target="_blank"
+                        <a id="downloadLink" href="./src/public/CV-GonzaloMiguel-Dev.pdf" download target="_blank"
                             style="display: none">Descargar CV</a>
                         <button onclick="downloadCV()"
                             class="inline-flex text-[#f5f5f5] bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] py-2 px-6 focus:outline-none  rounded text-lg">Descargar
@@ -101,152 +102,91 @@
 
         <!-- Seccion Proyectos -->
 
-        <section id="proyectos" class="flex flex-col justify-center items-center ">
+        <section id="proyectos" class="flex flex-col justify-center items-center m-10">
             <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-[30px] md:text-[40px]">Proyectos</h3>
             <p class="p-5 font-outfit font-normal leading-[36px] text-[#fff] text-[18px]">Todo lo que puedas <em
                     class="font-bold text-[#31D5DE]">imaginar</em>, lo podras <em
                     class="font-bold text-[#31D5DE]">programar</em></p>
-            <div class="flex mt-4 flex-col gap-10 p-5">
-                <ul class="flex justify-center items-center flex-row space-x-4  md:space-x-8">
-                    <li>
-                        <button id="btnTodos"
-                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">Todos
-                            <button>
-                    </li>
-                    <li class="">
-                        <button id="btnReact"
-                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">React Js
+            <div class="flex flex-col md:mx-20">
+
+                <div class="flex flex-col md:flex-row mt-2 md:mt-0" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="md:basis-1/2 md:m-20 my-5">
+                        <img class="md:h-[250px] w-full" src="./src/public/proyectos/burguer.jpg" alt="">
+                    </div>
+                    <div class="md:basis-1/2 flex flex-col justify-center items-center">
+                        <h3
+                            class="flex items-center font-raleway font-bold text-[16px] md:text-[22px] leading-[36px] text-[#7bc6ca]">
+                            Departamentos en alquiler - Trabajo Freelance para un cliente</h3>
+                        <p
+                            class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] mt-4">
+                            Diseñada
+                            para proporcionar información clara y concisa tanto para dispositivos móviles
+                            como
+                            de escritorio. Los visitantes pueden encontrar fácilmente información sobre los
+                            departamentos disponibles y ponerse en contacto para obtener más detalles.</p>
+                        <div class="flex justify-center items-center mt-5 md:space-x-3">
+                            <img src="../src/public/iconos/html.png" alt="">
+                            <img src="../src/public/iconos/css.png" alt="">
+                            <img src="../src/public/iconos/js.png" alt="">
+                            <img src="../src/public/iconos/git.png" alt="">
+                        </div>
+                        <button 
+                            class="inline-flex text-[#f5f5f5] bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] py-1 px-4 focus:outline-none rounded mt-4 text-sm">
+                            Ir al proyecto
                         </button>
-                    </li>
-                    <li class="">
-                        <button id="btnTailwind"
-                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">Tailwind
-                            Css
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row mt-2 md:mt-0" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="md:basis-1/2 md:m-20 my-5">
+                        <img class="md:h-[250px] w-full" src="./src/public/proyectos/burguer.jpg" alt="">
+                    </div>
+                    <div class="md:basis-1/2 flex flex-col justify-center items-center">
+                        <h3
+                            class="flex items-center font-raleway font-bold text-[16px] md:text-[22px] leading-[36px] text-[#7bc6ca]">
+                            Local de hamburguesas - Proyecto personal</h3>
+                        <p
+                            class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] mt-4">
+                            Los visitantes pueden explorar diferentes tipos de hamburguesas y aprender sobre
+                            sus ingredientes y combinaciones únicas. Aunque actualmente no se pueden
+                            personalizar las hamburguesas, la página proporciona una experiencia visual y
+                            descriptiva que permite a los usuarios elegir la hamburguesa que mejor se adapte
+                            a sus preferencias.</p>
+                        <div class="flex justify-center items-center mt-5 md:space-x-3">
+                            <img src="../src/public/iconos/html.png" alt="">
+                            <img src="../src/public/iconos/css.png" alt="">
+                            <img src="../src/public/iconos/js.png" alt="">
+                            <img src="../src/public/iconos/git.png" alt="">
+                            <img src="./public/iconos/react.png" alt="">
+                        </div>
+                        <a href="https://gonzamiguel.github.io/Burguers/" target="_blank"><button 
+                            class="inline-flex text-[#f5f5f5] bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] py-1 px-4 focus:outline-none rounded mt-4 text-sm">
+                            Ir al proyecto
+                        </button></a>
+                    </div> 
+                </div>
+                <div class="flex flex-col md:flex-row mt-2 md:mt-0" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="md:basis-1/2 md:m-20 my-5">
+                        <img class="md:h-[250px]  w-full" src="./src/public/iconos/Psicovia.jpg" alt="">
+                    </div>
+                    <div class="md:basis-1/2 flex flex-col justify-center items-center">
+                        <h3
+                            class="flex items-center font-raleway font-bold text-[16px] md:text-[22px] leading-[36px] text-[#7bc6ca]">
+                            Psicovia - Trabajo Freelance para un cliente</h3>
+                        <p
+                            class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] mt-4">
+                            Pagina para una clínica integral de psicología dedicada a proporcionar soluciones completas y personalizadas para todas las necesidades relacionadas con la salud mental. En la cual se ve una seccion principal, una pagina dedicada para psicologos y otra para ver el detalle de los mismos.</p>
+                        <div class="flex justify-center items-center mt-5 md:space-x-3">
+                            <img src="../src/public/iconos/html.png" alt="">
+                            <img src="../src/public/iconos/css.png" alt="">
+                            <img src="../src/public/iconos/js.png" alt="">
+                            <img src="../src/public/iconos/git.png" alt="">
+                            <img src="./public/iconos/tailwindchico.png" alt="">
+                        </div>
+                        <button 
+                            class="inline-flex text-[#f5f5f5] bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] py-1 px-4 focus:outline-none rounded mt-4 text-sm">
+                            Ir al proyecto
                         </button>
-                    </li>
-                    <li class="">
-                        <button id="btnSass"
-                            class="bg-[#31D5DE] bg-opacity-50 hover:bg-[#31D5DE] text-white py-2 px-2 rounded">Sass
-                        </button>
-                    </li>
-                </ul>
-                <div class="flex w-full flex-wrap content-center justify-center ">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center">
-                        <div class="w-72 md:w-96 relative tarjeta proyecto-tailwind">
-
-                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/centralAv.webp" />
-                            <a href="https://tomaszalazar.github.io/Central-Av/" target="_blank">
-                                <div
-                                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
-                                    <h3
-                                        class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
-                                        Departamentos en alquiler</h3>
-                                    <p
-                                        class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
-                                        Diseñada
-                                        para proporcionar información clara y concisa tanto para dispositivos móviles
-                                        como
-                                        de escritorio. Los visitantes pueden encontrar fácilmente información sobre los
-                                        departamentos disponibles y ponerse en contacto para obtener más detalles.</p>
-                                    <div class="flex justify-center items-center mt-3 md:space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w-72 md:w-96 relative tarjeta proyecto-react">
-                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/burguer.webp" />
-                            <a href="https://gonzamiguel.github.io/Burguers/" target="_blank">
-                                <div
-                                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
-                                    <h3
-                                        class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
-                                        Local de hamburguesas</h3>
-                                    <p
-                                        class="px-3 font-outfit font-normal  text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
-                                        Los visitantes pueden explorar diferentes tipos de hamburguesas y aprender sobre
-                                        sus ingredientes y combinaciones únicas. Aunque actualmente no se pueden
-                                        personalizar las hamburguesas, la página proporciona una experiencia visual y
-                                        descriptiva que permite a los usuarios elegir la hamburguesa que mejor se adapte
-                                        a sus preferencias.
-                                    </p>
-                                    <div class="flex justify-center items-center mt-3 md
-                                space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
-                                        <img src="./src/public/iconos/react.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="w-72 md:w-96 relative tarjeta proyecto-sass">
-
-                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/analisisPro.webp"/>
-
-                            <a href="https://analyticspro.netlify.app" target="_blank">
-                                <div
-                                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
-                                    <h3
-                                        class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
-                                        Analytics Service</h3>
-                                    <p
-                                        class="px-3 font-outfit font-normal  text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
-                                        Diseñada para ofrecer asesoramiento estratégico en datos para optimizar
-                                        procesos,
-                                        análisis predictivo y visualización de datos. Ayudamos a las organizaciones a
-                                        tomar
-                                        decisiones informadas y alcanzar objetivos utilizando herramientas y técnicas de
-                                        análisis avanzadas.</p>
-                                    <div class="flex justify-center items-center mt-3 md:space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/file_type_sass_icon_130182.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w-72 md:w-96 relative tarjeta proyecto-react">
-                            <img class="h-52 md:h-60 w-full object-cover opacity-100 transition-opacity duration-500 hover:opacity-50"
-                                src="./src/public/proyectos/adidas.webp" />
-
-                            <a href="https://pruebas-react-1.netlify.app" target="_blank">
-                                <div
-                                    class="absolute top-0 left-0 marker:w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-500 hover:opacity-100">
-                                    <h3
-                                        class="font-raleway font-bold text-[16px] md:text-[18px] leading-[36px] text-[#7bc6ca]">
-                                        Ecommerce de zapatillas
-                                    </h3>
-                                    <p
-                                        class="px-3 font-outfit font-normal text-[12px] md:text-[15px] leading-[20px] text-[#fff] ">
-                                        Los usuarios pueden explorar nuestra selección de zapatillas, filtrar por
-                                        genero, y
-                                        realizar compras de manera segura. Además de la venta de productos, nuestro
-                                        sitio
-                                        proporciona información detallada sobre cada modelo, incluyendo características,
-                                        materiales y tecnologías utilizadas en la fabricación.
-                                    </p>
-                                    <div class="flex justify-center items-center mt-3 md:space-x-3">
-                                        <img src="./src/public/iconos/html.png" alt="">
-                                        <img src="./src/public/iconos/css.png" alt="">
-                                        <img src="./src/public/iconos/js.png" alt="">
-                                        <img src="./src/public/iconos/git.png" alt="">
-                                        <img src="./src/public/iconos/react.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>/src
+                    </div> 
                 </div>
             </div>
         </section>
@@ -255,8 +195,8 @@
 
         <section id="habilidades" class="flex flex-col justify-center items-center mt-10">
             <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Habilidades tecnicas</h3>
-            <div id="carousel" class="flex p-5 borderkk">
-                <picture id="carousel-inner" class="flex flex-row flex-wrap justify-center gap-2 md:gap-5">
+            <div class="flex p-5 borderkk" data-aos="zoom-in" data-aos-duration="2000">
+                <picture class="flex flex-row flex-wrap justify-center gap-2 md:gap-5">
                     <img src="./src/public/iconos/gitgrande.png" alt="">
                     <img src="./src/public/iconos/htmlgrande.png" alt="">
                     <img src="./src/public/iconos/cssgrande.png" alt="">
@@ -267,45 +207,7 @@
                 </picture>
             </div>
         </section>
-        
 
-        <section id="habilidades" class="flex flex-col justify-center items-center mt-10">
-            <h3 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Habilidades blandas</h3>
-            <div class="flex flex-wrap justify-center p-5 borderkk">
-                <div class="grid grid-cols-1 gap-2 md:gap-5 text-[#fff]">
-                    <div>
-                        <div class="flex flex-row">
-                            <img class="w-5 h-5" src="./src/public/iconos/aprobado.png" alt="tilde">
-                            <h3>Creatividad</h3>
-                        </div>
-                        <p class="text-sm">Soluciones originales</p>
-                    </div>
-                    <div>
-                        <div class="flex flex-row">
-                            <img class="w-5 h-5" src="./src/public/iconos/aprobado.png" alt="tilde">
-                            <h3>Responsabilidad</h3>
-                        </div>
-                        <p class="text-sm">Cumplimiento y confiabilidad</p>
-                    </div>
-                    <div>
-                        <div class="flex flex-row">
-                            <img class="w-5 h-5" src="./src/public/iconos/aprobado.png" alt="tilde">
-                            <h3>Aprendizaje continuo</h3>
-                        </div>
-                        <p class="text-sm">Compromiso con el aprendizaje y mejora continua</p>
-                    </div>
-                    <div>
-                        <div class="flex flex-row">
-                            <img class="w-5 h-5" src="./src/public/iconos/aprobado.png" alt="tilde">
-                            <h3>Flexibilidad</h3>
-                        </div>
-                        <p class="text-sm">Adaptable y flexible a cualquier situación</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        </section>
 
         <!-- Seccion Sobre Mi -->
 
@@ -322,7 +224,7 @@
                 seguir creciendo, aprendiendo y compartiendo mi pasión con el mundo.
             </p>
         </section>
-        
+
         <!-- SECCION CONTACTOS -->
 
         <section id="contacto" class="flex flex-col items-center mt-14">
@@ -334,13 +236,15 @@
                     <img src="./src/public/iconos/mail.png" alt="email">
                     <h4>Email</h4>
                     <p class="text-sm">gonzalomiguel.dev@gmail.com</p>
-                    <a href="mailto:gonzalomiguel.dev@gmail.com" target="_blank"><em class="font-bold text-[#31D5DE]">Contáctame</em></a>
+                    <a href="mailto:gonzalomiguel.dev@gmail.com" target="_blank"><em
+                            class="font-bold text-[#31D5DE]">Contáctame</em></a>
                 </div>
                 <div class="borderkk flex flex-col items-center p-5 gap-2 md:w-[300px] w-[250px]">
                     <img src="./src/public/iconos/linkedin.png" alt="linkedin">
                     <h4>Linkedin</h4>
                     <p class="text-sm">Gonzalo Miguel</p>
-                    <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank"><em class="font-bold text-[#31D5DE]">Contáctame</em></a>
+                    <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank"><em
+                            class="font-bold text-[#31D5DE]">Contáctame</em></a>
                 </div>
             </div>
         </section>
@@ -352,14 +256,21 @@
         <footer class="flex justify-center items-center flex-col">
             <h4 class="font-raleway font-bold leading-[60px] text-[#fff] text-3xl">Gonzalo Miguel</h4>
             <div class="flex flex-row gap-x-6 mt-4 mb-4">
-                <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank"><img src="./src/public/iconos/linkedin.png" alt="linkedin"></a>
-                <a href="https://github.com/Gonzamiguel" target="_blank"><img src="./src/public/iconos/github_logo_icon_147285.png" alt="git"></a>
-                <a href="mailto:gonzalomiguel.dev@gmail.com" target="_blank"><img src="./src/public/iconos/mail.png" alt="email"></a>
+                <a href="https://www.linkedin.com/in/gonzalo-miguel-615236211/" target="_blank"><img
+                        src="./src/public/iconos/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/Gonzamiguel" target="_blank"><img
+                        src="./src/public/iconos/github_logo_icon_147285.png" alt="git"></a>
+                <a href="mailto:gonzalomiguel.dev@gmail.com" target="_blank"><img src="./src/public/iconos/mail.png"
+                        alt="email"></a>
             </div>
             <p class="text-sm text-[#fff]">© Miguel Gonzalo. Todos los derechos reservados
         </footer>
     </main>
     <script src="./src/utils/burguerbutton.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-/
+
 </html>

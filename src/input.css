@@ -13,58 +13,10 @@
 }
 
 
-#carousel {
-    overflow: hidden;
-    position: relative;
-}
-
-#carousel-inner {
-    display: flex;
-    animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-}
-
-#carousel-inner img {
-    margin-right: 10px; /* Espacio entre las imágenes */
-}
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Aplica la animación al elemento */
-#titulo {
-    animation: fadeIn 4s ease-in-out; /* Puedes ajustar la duración y la función de temporización según tus preferencias */
-}
-
-#nombre {
-    animation: fadeIn 2s ease-in-out; /* Puedes ajustar la duración y la función de temporización según tus preferencias */
-}
 
 
 
-@media screen and (max-width: 1023px) {
-    .tarjeta .relative {
-        position: static;
-    }
 
-    .tarjeta .absolute {
-        position: static;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        opacity: 1;
-        transition: none;
-        text-align: center;
-        padding: 10px;
-    }
-}
 
 
 
